@@ -1,0 +1,102 @@
+body {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 3rem;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+}
+
+footer {
+  left: 0;
+  background-color: #aaa4a4;
+  color: white;
+  text-align: center;
+  padding: 0.1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem;
+}
+
+.filter {
+  flex: 1;
+  min-width: 200px;
+  background-color: #ddd;
+  padding: 0.4rem;
+  margin-right: 2%;
+}
+
+.filter > input {
+  width: 95%;
+}
+
+.film {
+  display: flex;
+  flex: 1 1 calc(20% - 1rem);
+  flex-direction: column;
+  justify-content: space-between;
+
+  border: 1px solid #6b545428;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  background-color: #f4f4f4;
+  padding: 1rem;
+}
+
+.filmer {
+  flex: 3;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.film img {
+  max-width: 100%;
+  height: auto;
+}
+
+.film h3 {
+  margin: 0.5rem 0;
+}
+
+button.lasmerknapp {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #333;
+  color: rgb(253, 230, 230);
+  border: none;
+  cursor: pointer;
+}
+
+.film p {
+  display: none;
+}
+
+/* Responsivt */
+@media (max-width: 768px) {
+  .film {
+      flex: 1 1 100%;
+  }
+}
